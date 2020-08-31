@@ -15,10 +15,10 @@
 
     document.getElementById("run").addEventListener("click", function () {
         var x = document.getElementById("numbers").value
-        var array = JSON.parse("[" + x + "]");
-       array.sort(function(a, b){return a - b;});
-       console.log(array);
-       document.getElementById("numbers").value=array;
+        var test = x.split(',');
+        test.sort(function(a, b){return a - b;});
+        console.log(test);
+        document.getElementById("numbers").value=test;
     });
 
 })();
