@@ -13,7 +13,8 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+       for (let i=1; i<22; i++)
+       {console.log("Square of "+ i+ " is "+ i*i)}
 
     });
 
