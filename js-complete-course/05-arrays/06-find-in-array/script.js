@@ -89,6 +89,10 @@
         },
     ];
 
-    // your code here
+    run.onclick=function(){
+        for(i=0; i<people.length; i++){
+        if(people[i].firstname==="Jean" && people[i].lastname==="Dupont")
+            (console.log(people[i].email + i))}
+    }
 
 })();
