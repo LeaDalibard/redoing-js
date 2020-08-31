@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     var people = [
         {
@@ -89,6 +89,11 @@
         },
     ];
 
-    // your code here
+    run.onclick = function () {
+        var adult = people.filter(function (majority) {
+            return majority.age > 18;
 
+        });
+        console.log(adult);
+    }
 })();
