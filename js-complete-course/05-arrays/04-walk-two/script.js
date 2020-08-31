@@ -26,6 +26,8 @@
         "cerise",
     ];
 
-    // your code here
+    run.onclick=function(){
+        fruits.forEach(element => console.log(element))
+    }
 
 })();
