@@ -9,8 +9,10 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-
-    // your code here
+(function () {
+    red.onclick=function(){document.body.style.background = "red"};
+    green.onclick=function(){document.body.style.background = "green"};
+    yellow.onclick=function(){document.body.style.background = "yellow"};
+    blue.onclick=function(){document.body.style.background = "blue"};
 
 })();
