@@ -39,6 +39,7 @@
         },
     ];
 
-    // your code here
-
+    run.onclick=function(){
+        people.forEach(element => console.log(element.firstname))
+    }
 })();
