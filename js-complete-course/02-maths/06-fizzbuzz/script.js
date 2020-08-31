@@ -9,8 +9,22 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-
-    // your code here
+(function () {
+    var number = prompt("Please write a number");
+    if (number % 5 == 0 && number % 3 == 0) {
+        console.log("Fizzbuzz")
+    }
+    else if (number % 5 == 0 && number % 3 != 0)
+    {
+        console.log("Fizz")
+    }
+    else if (number % 5 != 0 && number % 3 == 0)
+    {
+        console.log("Buzz")
+    }
+    else
+    {
+        console.log(number)
+    }
 
 })();
