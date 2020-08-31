@@ -9,8 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-
-    // your code here
-
+(function () {
+    run.onclick = function () {
+        var color = document.getElementById("color").value;
+        document.body.style.background = color;
+    };
 })();
