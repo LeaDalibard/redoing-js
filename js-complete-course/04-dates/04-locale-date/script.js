@@ -13,6 +13,17 @@
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
-    // your code here
+    var date= new Date;
+    var day=date.getDay();
+    var daten=date.getDate()
+    var month=date.getMonth();
+    var months=["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
+    var m=months[month];
+    var days=["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+    var d=days[day-1]
+    var year=date.getFullYear();
+    var h=date.getHours();
+    var min=date.getMinutes();
+    target.innerHTML=d+' '+daten+' '+m+' '+year+', '+h+'h'+min+'.'
 
 })();
