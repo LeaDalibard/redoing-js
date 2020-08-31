@@ -10,7 +10,9 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
-
+    run.onclick = function () {
+        for(let i = 1;i <= 10;i++) {
+            document.getElementById("n-" + i).innerHTML = Math.floor(Math.random() * 11);
+        }
+    }
 })();
