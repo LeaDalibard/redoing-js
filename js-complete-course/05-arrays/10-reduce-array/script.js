@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     var people = [
         {
@@ -89,6 +89,8 @@
         },
     ];
 
-    // your code here
+    run.onclick = function () {
+        console.log(people.reduce((a, b) => a + b.age, 0));
+    };
 
 })();
