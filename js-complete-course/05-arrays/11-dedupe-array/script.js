@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     var fruits = [
         "cerise",
@@ -28,6 +28,20 @@
         "cerise",
     ];
 
-    // your code here
+    run.onclick = function () {
+        //var unique = fruits.filter((a, b) => fruits.indexOf(a) === b);
+        //let unique= [...new Set(fruits)];
+        let unique = {};
+        function remove(fruits) {
+            fruits.forEach(function (i) {
+                if (!unique[i]) {
+                    unique[i] = true;
+                }
+            });
+            return Object.keys(unique);
+        }
 
+        remove(fruits);
+        console.log(unique);
+    }
 })();
