@@ -38,10 +38,8 @@
                     unique[i] = true;
                 }
             });
-            return Object.keys(unique);
         }
-
         remove(fruits);
-        console.log(unique);
+        console.log(Object.keys(unique));
     }
 })();
