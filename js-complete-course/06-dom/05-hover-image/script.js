@@ -13,9 +13,12 @@
     let hover = document.querySelector("img").getAttribute("data-hover");
     let source = document.querySelector("img").getAttribute("src");
 
-    document.querySelector("img").addEventListener('mouseover', function()
-    {this.src = hover;});
-    document.querySelector("img").addEventListener('mouseout', function()
-    {this.src = source;});
+    document.querySelector("img").onmouseover= function (){
+        this.src = hover;
+    }
+    document.querySelector("img").onmouseout= function (){
+        this.src = source;
+    }
+
 
 })();
