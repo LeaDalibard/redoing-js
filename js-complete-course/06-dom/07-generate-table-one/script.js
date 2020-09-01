@@ -10,7 +10,12 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
-
+    var x=document.createElement("Table");
+    document.getElementById("target").appendChild(x);
+    for(let i=1; i<11; i++){
+       var tr=document.createElement("tr");
+       x.appendChild(tr);
+       var td=document.createElement("td");
+       tr.appendChild(td);
+    }
 })();
